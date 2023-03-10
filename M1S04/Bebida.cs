@@ -23,10 +23,7 @@ namespace M1S04
             ValorCompra = valorCompra;
         }
 
-        public Bebida()
-        {
-        }
-
+        
         public void Comprar(string id, string valorCompra)
         {
             Console.WriteLine($"Valor da compra do produto id {id} alterado para {valorCompra}"); 

@@ -28,5 +28,13 @@ namespace M1S04
         {
             Console.WriteLine($"Valor da compra do produto id {id} alterado para {valorCompra}"); 
         }
+        public static void Alterar(Bebida bebida)
+        {
+            foreach (var item in ListaBebida.Where(w => w.id == bebida.id))
+            {
+
+            }
+
+        }
     }
 }

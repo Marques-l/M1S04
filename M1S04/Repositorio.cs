@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace M1S04
 {
-    public static class Repositorio
+    public static class Repositorio 
     {
         private static List<Bebida> ListaBebida { get; set; }
         private static List<Suco> ListaSuco { get; set; }
@@ -42,6 +42,13 @@ namespace M1S04
         {
             ListaSuco.Add(suco); 
         }
-       
+        public static void Alterar(Bebida bebida)
+        {
+            foreach (var item in ListaBebida.Where(w => w.Id == bebida.Id))
+            {
+                item.NomeBebida = bebida.NomeBebida;
+            }
+
+        }
     }
 }

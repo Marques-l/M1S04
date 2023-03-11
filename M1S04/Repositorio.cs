@@ -50,5 +50,17 @@ namespace M1S04
             }
 
         }
+        public static List<Bebida> Listar()
+        {
+            return ListaBebida;
+        }
+        public static void Remover(int id)
+        {
+            var localBebida = ListaBebida.FirstOrDefault(w => w.Id == id);
+            if (localBebida != null)
+            {
+                ListaBebida.Remove(localBebida); 
+            }
+        }
     }
 }

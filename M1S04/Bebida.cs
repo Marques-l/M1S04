@@ -28,6 +28,11 @@ namespace M1S04
         {
             Console.WriteLine($"Valor da compra do produto id {id} alterado para {valorCompra}"); 
         }
-        
+        public void ImprimirBebidas()
+        {
+            Console.WriteLine($"ID, {Id}, nome, {NomeBebida} e valor, {ValorCompra}"); 
+        }
+
+
     }
 }

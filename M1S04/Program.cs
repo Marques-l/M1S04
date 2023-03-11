@@ -14,3 +14,5 @@ Repositorio.Alterar(bebida);
 
 bebida = new Bebida(1, "Diet", 1000, "ALTERADO", (decimal)2.00);
 Repositorio.Remover(14); 
+
+Repositorio.ImprimirBebida();

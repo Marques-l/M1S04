@@ -61,6 +61,14 @@ namespace M1S04
             {
                 ListaBebida.Remove(localBebida); 
             }
+           
+        }
+        public static void ImprimirBebida()
+        {
+            foreach (var item in ListaBebida)
+            {
+                item.ImprimirBebidas();
+            }
         }
     }
 }

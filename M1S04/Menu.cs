@@ -24,20 +24,29 @@ namespace M1S04
             } while (opcao != 7);
             if (opcao == 1)
             {
-
+                Bebida bebida = new Bebida(1, "Diet", 1000, "Coca-Cola", (decimal)2.00); //Inserindo manualmente, mas poderia ter sido feito pelo Console
+                Bebida bebida2 = new Bebida(14, "Diet", 2000, "Coca-Cola", (decimal)2.00);
+                Repositorio.InserirBebida(bebida);
+                Repositorio.InserirBebida(bebida2);
+                 
             }
             if (opcao == 2)
             {
+                Bebida bebida = new Bebida(1, "Diet", 1000, "Coca-Cola", (decimal)2.00); //Inserindo manualmente, mas poderia ter sido feito pelo Console
+                bebida.Id = 1;
+                bebida.NomeBebida = "Alterado para Mountain Dew";
+                Repositorio.Alterar(bebida);
 
+                bebida = new Bebida(1, "Diet", 1000, "ALTERADO", (decimal)2.00);
             }
 
             if (opcao == 3)
             {
-
+                Repositorio.Remover(1); // Pode ser feito pelo console escolhendo o id para remover
             }
             if (opcao == 4)
             {
-
+                Repositorio.ImprimirBebida();
             }
             if (opcao == 5)
             {
